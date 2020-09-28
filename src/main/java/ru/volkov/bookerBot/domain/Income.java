@@ -1,11 +1,12 @@
 package ru.volkov.bookerBot.domain;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Income {
     private Long user_id;
     private Long sum = new Long(0);
-    private LocalDate date = LocalDate.now();
+    private LocalDateTime date = LocalDateTime.now();
     private IncomeType incomeType = IncomeType.OTHER;
     private String description = "Default description";
     private Boolean cash = new Boolean(false);
@@ -27,11 +28,11 @@ public class Income {
         this.sum = sum;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

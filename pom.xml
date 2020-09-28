@@ -23,6 +23,7 @@
 
     <properties>
         <telegram_bot.version>4.9.1</telegram_bot.version>
+        <junit.version>4.12</junit.version>
         <!--        <slf4j.version>1.7.5</slf4j.version>-->
         <!--        <log4j.version>2.13.3</log4j.version>-->
         <!--        <jsoup.version>1.13.1</jsoup.version>-->
@@ -43,8 +44,15 @@
             <version>42.2.16</version>
         </dependency>
 
-    </dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
 
+
+    </dependencies>
 
 
 </project>

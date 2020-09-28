@@ -15,7 +15,7 @@ CREATE TABLE user_expens
 (
 	ex_us_id INTEGER not null,
     ex_sum BIGINT not null ,
-    ex_date DATE not null,
+    ex_date TIMESTAMP not null,
     ex_type VARCHAR (50) not null,
     ex_description VARCHAR (50),
     ex_cash BOOLEAN not null,
@@ -32,3 +32,4 @@ CREATE TABLE user_income
     in_cash BOOLEAN not null,
 	FOREIGN KEY (in_us_id) REFERENCES app_user(us_id) ON DELETE RESTRICT
 );
+
